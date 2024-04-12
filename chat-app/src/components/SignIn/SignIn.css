@@ -1,0 +1,14 @@
+.google-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 85px;
+}

@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Chatbox.css';
+
+// import {db} from '../../Firebase'
 
 const Chatbox = ({ onSend }) => {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
   
+  // useEffect(() => {
+  //   const unsubscribe = db.collection('message').orderBy('createdAt').limit(50).onSnapshot (snapshot => {
+  //     setMessages(snapshot.docs.map(doc => doc.data().text));
+  //   })
+  //   return () => unsubscribe();
+  // } , []);
 
   const handleMessageChange = (event) => {
     setMessage(event.target.value);
@@ -17,6 +25,16 @@ const Chatbox = ({ onSend }) => {
       setMessage('');
     }
   };
+
+  // const handleSendClick = () => {
+  //   if (message.trim() !== '') {
+  //     db.collection('message').add({
+  //       text: message,
+  //       createdAt: new Date(), // Add timestamp for sorting
+  //     });
+  //     setMessage('');
+  //   }
+  // };
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter'){
