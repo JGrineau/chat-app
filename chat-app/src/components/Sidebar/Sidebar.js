@@ -12,7 +12,6 @@ const Sidebar = () => {
         <SignOut />
         <Link to="/chat1">
           <CustomButton>Chat 1</CustomButton>
-          
         </Link>
         <Link to="/chat2">
           <CustomButton>Chat 2</CustomButton>
