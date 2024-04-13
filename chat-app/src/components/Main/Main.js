@@ -5,7 +5,9 @@ const Main = () => {
   return (
     <div className='main-container'>
         
-        <h1>Welcome to JP's Chat App</h1>
+        <h1 className='title'>Welcome to JP's Chat App </h1>
+        
+        <h2 className='heading'>Please chose a chat and get started!</h2>
     </div>
   )
 }

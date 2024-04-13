@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import './Chatbox.css';
 
-// import {db} from '../../Firebase'
 
 const Chatbox = ({ onSend }) => {
   const [message, setMessage] = useState('');
@@ -26,23 +25,11 @@ const Chatbox = ({ onSend }) => {
     }
   };
 
-  // const handleSendClick = () => {
-  //   if (message.trim() !== '') {
-  //     db.collection('message').add({
-  //       text: message,
-  //       createdAt: new Date(), // Add timestamp for sorting
-  //     });
-  //     setMessage('');
-  //   }
-  // };
-
   const handleKeyDown = (event) => {
     if (event.key === 'Enter'){
         handleSendClick();
     }
   }
-
-  
 
   return (
     <div className="chat-container">

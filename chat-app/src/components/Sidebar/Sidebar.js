@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 import CustomButton from '../CustomButton/CustomButton';
+import SignOut from '../SignOut/SignOut';
 
 const Sidebar = () => {
   return (
     <div>
       <div className='container'>
+        <SignOut />
         <Link to="/chat1">
           <CustomButton>Chat 1</CustomButton>
           

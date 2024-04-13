@@ -1,5 +1,6 @@
 import React from 'react'
 import ChatBox from '../Chatbox/Chatbox'
+// import ChatContainer from '../ChatContainer/ChatContainer'
 
 const Chat1 = () => {
 
@@ -10,7 +11,7 @@ const Chat1 = () => {
 
   return (
     <div>
-      Chat 1
+      <h1>Chat 1</h1>
       <ChatBox onSend={handleSend}/>
     </div>
   )
