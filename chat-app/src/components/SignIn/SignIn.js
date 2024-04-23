@@ -17,6 +17,8 @@ const SignIn = ({handleSignIn}) => {
           }
         };
 
+        //Need to add standard login with email and link to database with authentication verification
+
   return (
     <div>
         <h1 className='title'>Welcome to JP's Chat page</h1>
